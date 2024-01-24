@@ -1,6 +1,9 @@
 import React, { ReactNode, useEffect, useState } from 'react';
 import { FaArrowUp, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { RxDownload } from 'react-icons/rx';
+import "../App.css"
+import profileImg from "../../public/gon.jpg"
+import mvCV from "../../public/demo.pdf"
 
 // Component for the scroll-to-top button
 const ScrollToTop = () => {
@@ -49,7 +52,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, children }) => {
     return (
         <div className="border-t">
             <button
-                className="w-full text-left py-2 px-4 focus:outline-none"
+                className="w-full text-left py-2 px-4 focus:outline-none AccordionTitle"
                 onClick={() => setIsOpen(!isOpen)}
             >
                 <h2 className="text-lg font-bold text-gray-600 flex items-center">
@@ -89,14 +92,14 @@ const Profile = () => {
         <div>
             {/* Header section */}
             <header className="bg-gray-800 text-white text-center py-4">
-                <img className="rounded-full mx-auto w-24 h-24" src="./public/naruto.jpg" alt="Profile Picture" />
-                <h1 className="text-3xl font-bold mt-4 mb-10 text-[#a2a5a7]">Saransh Pachhai</h1>
+                <img className="rounded-full mx-auto w-24 h-24" src={profileImg} alt="Profile Picture" />
+                <h1 className="text-3xl font-bold mt-4 mb-10 text-[#d3c6c6]">Saransh Pachhai</h1>
 
                 {/* Download Resume section */}
                 <div className="text-2xl flex items-center justify-center gap-2" style={{ marginBottom: '48px' }}>
-                    <a href="./public/demo.pdf" download className="text-gray-400 flex items-center">
-                        <RxDownload />
-                        Download Resume
+                    <a href={mvCV} download className="text-[#534e4e] flex items-center transition-all duration-300 ease-in-out bg-green-600 hover:bg-white hover:text-[#415858] rounded-full px-6 py-3">
+                        Download CV
+                        <RxDownload className="ml-2" />
                     </a>
                 </div>
             </header>

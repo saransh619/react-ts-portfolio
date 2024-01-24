@@ -9,12 +9,17 @@ This is my personal portfolio built with React and TypeScript. It showcases my s
 git clone https://github.com/saransh619/react-ts-portfolio.git
 ```
 
-2. Install dependencies.
+2. Navigate to the project directory.
 ```bash
-npm install
+cd react-ts-portfolio
 ```
 
-3. Run the development server.
+3. Install dependencies.
+```bash
+npm install or pnpm install or yarn
+```
+
+4. Run the development server.
 ```bash
 npm run dev
 ```
