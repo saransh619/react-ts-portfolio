@@ -2,8 +2,8 @@ import React, { ReactNode, useEffect, useState } from 'react';
 import { FaArrowUp, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { RxDownload } from 'react-icons/rx';
 import "../App.css"
-import profileImg from "../../public/gon.jpg"
-import mvCV from "../../public/demo.pdf"
+import profileImg from "../../public/saransh.jpg"
+import mvCV from "../../public/CV (Saransh Pachhai).pdf"
 
 // Component for the scroll-to-top button
 const ScrollToTop = () => {
@@ -149,10 +149,31 @@ const Profile = () => {
                             <li>Understood the principles of serverless development and successfully created a Serverless Sequelize project for streamlined database management, utilizing Express, Sequelize, and Docker for simple deployment.</li>
                         </ul>
                     </div>
+
+                    {/* Backend Developer */}
+                    <div className="mb-6">
+                        <h3 className="text-lg font-bold mb-2 text-[#3498db]">Jr. Backend Developer (Node JS)</h3>
+                        <p className="text-sm text-gray-700">Inflancer Technology Pvt. Ltd., Gwarko, Lalitpur | February 2024 - Present</p>
+                        <ul className="list-disc pl-6">
+                            <li>Currently working as a Backend Developer, contributing to the Inflancer project available on iOS, Android, and web platforms.</li>
+                            <li>Utilized TypeScript and Node.js for robust and efficient backend development.</li>
+                            <li>Implemented image processing and optimization using Sharp, and video optimization with FFmpeg.</li>
+                            <li>Leveraged Digital Ocean for scalable and reliable cloud infrastructure.</li>
+                            <li>Designed and executed complex aggregation operations in MongoDB for efficient data handling and analysis.</li>
+                        </ul>
+                    </div>
                 </div>
 
                 {/* Projects section */}
                 <h2 className="text-3xl font-bold mt-8 mb-6 text-teal-600">Projects</h2>
+
+                {/* Inflancer Project */}
+                <Accordion title="Inflancer Project">
+                    <ProjectAccordionItem
+                        title="Inflancer Project"
+                        description="Currently contributing to the Inflancer project, available on iOS, Android, and web platforms. Developed backend features using TypeScript and Node.js, implemented image and video optimization with Sharp and FFmpeg, and utilized Digital Ocean for cloud infrastructure."
+                    />
+                </Accordion>
 
                 {/* GUMP Project */}
                 <Accordion title="GUMP Project">
