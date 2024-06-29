@@ -4,6 +4,10 @@ import { RxDownload } from 'react-icons/rx';
 import "../App.css"
 import profileImg from "../../public/saransh.jpg"
 import mvCV from "../../public/CV (Saransh Pachhai).pdf"
+import Footer from './Footer';
+
+// File name of the CV
+const cvFileName = "CV (Saransh Pachhai).pdf";
 
 // Component for the scroll-to-top button
 const ScrollToTop = () => {
@@ -33,7 +37,7 @@ const ScrollToTop = () => {
     // JSX for the scroll-to-top button
     return (
         <div className={`${isVisible ? 'fixed bottom-10 right-10' : 'hidden'} cursor-pointer transition-opacity duration-500`}>
-            <FaArrowUp onClick={scrollToTop} className="text-3xl text-gray-500 hover:text-gray-700" />
+            <FaArrowUp onClick={scrollToTop} className="text-5xl text-gray-500 hover:text-gray-600 hover:bg-gray-100 rounded-full p-2 transition-all duration-300" />
         </div>
     );
 };
@@ -55,15 +59,18 @@ const Accordion: React.FC<AccordionProps> = ({ title, children }) => {
                 className="w-full text-left py-2 px-4 focus:outline-none AccordionTitle"
                 onClick={() => setIsOpen(!isOpen)}
             >
-                <h2 className="text-lg font-bold text-gray-600 flex items-center">
-                    <span className="mr-2">&#9656;</span>
+                <h3 className="text-lg font-bold text-gray-600 flex items-center">
+                    <span className={`mr-2 transition-transform duration-500 transform ${isOpen ? 'rotate-90' : 'rotate-0'}`}>&#9656;</span>
                     {title}
-                </h2>
+                </h3>
             </button>
-            {isOpen && <div className="p-4">{children}</div>}
+            <div className={`transition-max-h duration-500 overflow-hidden ${isOpen ? 'max-h-96' : 'max-h-0'}`}>
+                <div className="p-4">{children}</div>
+            </div>
         </div>
     );
 };
+
 
 // Interface for ProjectAccordionItem component props
 interface ProjectAccordionItemProps {
@@ -79,13 +86,6 @@ const ProjectAccordionItem: React.FC<ProjectAccordionItemProps> = ({ title, desc
     </div>
 );
 
-// Footer component
-const Footer = () => (
-    <footer className="mt-8 text-center text-gray-500 text-sm">
-        <p>&copy; {new Date().getFullYear()} Saransh Pachhai. All rights reserved.</p>
-    </footer>
-);
-
 // Main Profile component
 const Profile = () => {
     return (
@@ -97,7 +97,8 @@ const Profile = () => {
 
                 {/* Download Resume section */}
                 <div className="text-2xl flex items-center justify-center gap-2" style={{ marginBottom: '48px' }}>
-                    <a href={mvCV} download className="text-[#534e4e] flex items-center transition-all duration-300 ease-in-out bg-green-600 hover:bg-white hover:text-[#415858] rounded-full px-6 py-3">
+                    {/* Specify the filename in the download attribute */}
+                    <a href={mvCV} download={cvFileName} className="text-[#534e4e] flex items-center transition-all duration-300 ease-in-out bg-green-600 hover:bg-white hover:text-[#415858] rounded-full px-6 py-3">
                         Download CV
                         <RxDownload className="ml-2" />
                     </a>
@@ -107,7 +108,7 @@ const Profile = () => {
             {/* Main content section */}
             <section className="max-w-3xl mx-auto p-6 bg-white shadow-md rounded-md mt-[-50px]">
                 {/* About Me section */}
-                <h2 className="text-3xl font-bold mb-6 text-teal-600">About Me</h2>
+                <h2 className="text-3xl font-bold mb-6 text-teal-600 hover:bg-gray-200">About Me</h2>
                 <p className="text-lg">
                     B.Sc. CSIT graduate and Full-stack Developer with a passion for crafting efficient and user-friendly web applications.
                     Proficient in JavaScript, React, Node, and TypeScript. Experienced in both frontend and backend development,
@@ -276,7 +277,7 @@ const Profile = () => {
                     {/* Operating System */}
                     <div className="mt-3">
                         <h3 className="text-lg font-bold mb-2">Operating System</h3>
-                        <p className="text-sm">Windows, Linux</p>
+                        <p className="text-sm">Windows, Linux, MacOS</p>
                     </div>
                 </div>
 

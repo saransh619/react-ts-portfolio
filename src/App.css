@@ -6,3 +6,13 @@
   background-color: #f0f0f0; /* Change the background color on hover */
   cursor: pointer; /* Change cursor to pointer on hover */
 }
+
+/* App.css */
+h2 {
+  transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+h2:hover {
+  background-color: #f0f0f0; /* Change the background color on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
