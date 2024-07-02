@@ -1,0 +1,10 @@
+version: "3"
+services:
+  app:
+    image: saranshpachhai-portfolio
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5173" # Map port 5173 inside the container to port 5000 on the host
+    command: npm start -- --host
