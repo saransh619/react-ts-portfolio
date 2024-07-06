@@ -161,6 +161,8 @@ const Profile = () => {
                             <li>Implemented image processing and optimization using Sharp, and video optimization with FFmpeg.</li>
                             <li>Leveraged Digital Ocean for scalable and reliable cloud infrastructure.</li>
                             <li>Designed and executed complex aggregation operations in MongoDB for efficient data handling and analysis.</li>
+                            <li>Utilized Socket.io for real-time messaging, handling text, images, and files.</li>
+                            <li>Integrated Firebase for push notifications.</li>
                         </ul>
                     </div>
                 </div>
