@@ -132,11 +132,22 @@ const Profile = () => {
 
                     {/* Frontend Developer Intern */}
                     <div className="mb-6">
-                        <h3 className="text-lg font-bold mb-2 text-[#3498db]">Frontend Developer Intern</h3>
+                        <h3 className="text-lg font-bold mb-2 text-[#3498db]">Frontend Developer Intern (React JS)</h3>
                         <p className="text-sm text-gray-700">ITGlance, Tripureshwor | March 14, 2022 - June 14, 2022 (3 months)</p>
                         <ul className="list-disc pl-6">
                             <li>Contributed as a Frontend Developer Intern, focusing on the Job Portal System using React JS, Redux, and Context API hooks.</li>
                             <li>Utilized Tailwind CSS for a polished and efficient user interface.</li>
+                        </ul>
+                    </div>
+
+                    {/* Frontend Developer Traineeship */}
+                    <div className="mb-6">
+                        <h3 className="text-lg font-bold mb-2 text-[#3498db]">Frontend Developer Traineeship (React JS)</h3>
+                        <p className="text-sm text-gray-700">Treeleaf Technologies, Lalitpur | June 2022 - August 2022 (3 months)</p>
+                        <ul className="list-disc pl-6">
+                            <li>Worked as a Trainee on the EverFund project, a charitable website for elderly people.</li>
+                            <li>Developed features using React, including both class-based and functionalcomponents.</li>
+                            <li>Implemented responsive design, API handling, and state management using Redux, Redux Thunk, and Redux Saga. </li>
                         </ul>
                     </div>
 
