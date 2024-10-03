@@ -146,37 +146,40 @@ const Profile = () => {
                         <p className="text-sm text-gray-700">Treeleaf Technologies, Lalitpur | June 2022 - August 2022 (3 months)</p>
                         <ul className="list-disc pl-6">
                             <li>Worked as a Trainee on the EverFund project, a charitable website for elderly people.</li>
-                            <li>Developed features using React, including both class-based and functionalcomponents.</li>
-                            <li>Implemented responsive design, API handling, and state management using Redux, Redux Thunk, and Redux Saga. </li>
+                            <li>Developed features using React, including both class-based and functional components.</li>
+                            <li>Implemented responsive design, API handling, and state management using Redux, Redux Thunk, and Redux Saga.</li>
                         </ul>
                     </div>
 
                     {/* Backend Developer Intern */}
                     <div className="mb-6">
-                        <h3 className="text-lg font-bold mb-2 text-[#3498db]">Backend Developer Intern</h3>
+                        <h3 className="text-lg font-bold mb-2 text-[#3498db]">Backend Developer Intern (Node JS)</h3>
                         <p className="text-sm text-gray-700">Varosa Technology Pvt. Ltd., Sanepa, Lalitpur | September 19, 2023 - December 19, 2023 (3 months)</p>
                         <ul className="list-disc pl-6">
                             <li>Involved in Backend Development Internship, contributing to projects like GUMP (Genese Unified Mailing Platform) and CRM (Customer Relationship Management).</li>
-                            <li>Worked on the FreeSMS project using Swagger, implementing basicAuth for enhanced security.</li>
-                            <li>Understood the principles of serverless development and successfully created a Serverless Sequelize project for streamlined database management, utilizing Express, Sequelize, and Docker for simple deployment.</li>
+                            <li>Worked on the FreeSMS project using Swagger, implementing basic auth for enhanced security.</li>
+                            <li>Created a Serverless Sequelize project for streamlined database management, utilizing Express, Sequelize, and Docker.</li>
                         </ul>
                     </div>
 
-                    {/* Backend Developer */}
+                    {/* Mid-Level Backend Developer */}
                     <div className="mb-6">
-                        <h3 className="text-lg font-bold mb-2 text-[#3498db]">Jr. Backend Developer (Node JS)</h3>
+                        <h3 className="text-lg font-bold mb-2 text-[#3498db]">Mid-Level Backend Developer (Node.js)</h3>
                         <p className="text-sm text-gray-700">Inflancer Technology Pvt. Ltd., Gwarko, Lalitpur | February 2024 - Present</p>
                         <ul className="list-disc pl-6">
-                            <li>Currently working as a Backend Developer, contributing to the Inflancer project available on iOS, Android, and web platforms.</li>
+                            <li>Joined Inflancer Technology as a Jr. Backend Developer and was promoted to Mid-Level Backend Developer. Contribute to the Inflancer project across iOS, Android, and web platforms.</li>
                             <li>Utilized TypeScript and Node.js for robust and efficient backend development.</li>
                             <li>Implemented image processing and optimization using Sharp, and video optimization with FFmpeg.</li>
                             <li>Leveraged Digital Ocean for scalable and reliable cloud infrastructure.</li>
                             <li>Designed and executed complex aggregation operations in MongoDB for efficient data handling and analysis.</li>
                             <li>Utilized Socket.io for real-time messaging, handling text, images, and files.</li>
                             <li>Integrated Firebase for push notifications.</li>
+                            <li>Managed task automation with cron job scheduling to streamline backend processes.</li>
+                            <li>Developed admin panels with detailed analytics and reporting to enhance decision-making and platform management.</li>
                         </ul>
                     </div>
                 </div>
+
 
                 {/* Projects section */}
                 <h2 className="text-3xl font-bold mt-8 mb-6 text-teal-600">Projects</h2>
