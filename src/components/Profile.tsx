@@ -165,7 +165,7 @@ const Profile = () => {
                     {/* Mid-Level Backend Developer */}
                     <div className="mb-6">
                         <h3 className="text-lg font-bold mb-2 text-[#3498db]">Mid-Level Backend Developer (Node.js)</h3>
-                        <p className="text-sm text-gray-700">Inflancer Technology Pvt. Ltd., Gwarko, Lalitpur | February 2024 - Present</p>
+                        <p className="text-sm text-gray-700">Inflancer Technology Pvt. Ltd., Gwarko, Lalitpur | February 2024 - December 2024</p>
                         <ul className="list-disc pl-6">
                             <li>Joined Inflancer Technology as a Jr. Backend Developer and was promoted to Mid-Level Backend Developer. Contribute to the Inflancer project across iOS, Android, and web platforms.</li>
                             <li>Utilized TypeScript and Node.js for robust and efficient backend development.</li>
@@ -176,6 +176,12 @@ const Profile = () => {
                             <li>Integrated Firebase for push notifications.</li>
                             <li>Managed task automation with cron job scheduling to streamline backend processes.</li>
                             <li>Developed admin panels with detailed analytics and reporting to enhance decision-making and platform management.</li>
+                            <li>Worked on the Clinic project using the latest technology, Elyisa Bun, with
+                                MySQL for database management, building scalable clinic management systems
+                                with complex role-based functionalities.</li>
+                            <li>Gained expertise in implementing real-time communication features, secure
+                                appointment booking systems, and Admin Panels for efficient healthcare
+                                operations, while also learning to upload and store images in base64 format.</li>
                         </ul>
                     </div>
                 </div>
@@ -188,7 +194,15 @@ const Profile = () => {
                 <Accordion title="Inflancer Project">
                     <ProjectAccordionItem
                         title="Inflancer Project"
-                        description="Currently contributing to the Inflancer project, available on iOS, Android, and web platforms. Developed backend features using TypeScript and Node.js, implemented image and video optimization with Sharp and FFmpeg, and utilized Digital Ocean for cloud infrastructure."
+                        description="Contributed to the Inflancer project, available on iOS, Android, and web platforms. Developed backend features using TypeScript and Node.js, implemented image and video optimization with Sharp and FFmpeg, and utilized Digital Ocean for cloud infrastructure."
+                    />
+                </Accordion>
+
+                {/* Clinic Project */}
+                <Accordion title="Clinic Project">
+                    <ProjectAccordionItem
+                        title="Clinic Project"
+                        description="Worked on the Clinic project using Elyisa Bun and MySQL, building a scalable clinic management system with appointment bookings, real-time consultations, medicine prescriptions, and role-based functionalities for Patients, Doctors, Clinics, and Pharmacies. Developed an Admin Panel and implemented image uploading in base64 format."
                     />
                 </Accordion>
 
