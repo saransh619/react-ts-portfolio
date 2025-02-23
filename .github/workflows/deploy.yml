@@ -16,10 +16,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: "18" # Ensure this is at least 18.12
 
       - name: Install pnpm
         run: npm install -g pnpm
+
+      - name: Setup pnpm global bin directory
+        run: pnpm setup
 
       - name: Install dependencies
         run: pnpm install
